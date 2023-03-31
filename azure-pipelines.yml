@@ -1,4 +1,8 @@
 - task: PowerPlatformWhoAmi@2
+- task: PowerPlatformBackupEnvironment@2
+  inputs:
+    authenticationType: 'PowerPlatformSPN'
+    BackupLabel: 'Full Backup - $(Build.BuildNumber)'
   inputs:
     authenticationType: 'PowerPlatformSPN'
     PowerPlatformSPN: 'PowerAutomateIntegração'
