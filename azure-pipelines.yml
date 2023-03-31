@@ -6,8 +6,7 @@
     Environment: 'https://make.powerautomate.com/environments/Default-5be31d7e-cdfa-4200-8a1d-7e8a00e11d2e/flows'
 - task: microsoft-IsvExpTools.PowerPlatform-BuildTools.whoami.PowerPlatformWhoAmi@0
   displayName: 'Power Platform WhoAmI'
-
-  inputs: 
-#   Service Principal/client secret (supports MFA)
+  inputs:
+    # Service Principal/client secret (supports MFA)
     authenticationType: PowerPlatformSPN
     PowerPlatformSPN: 'My service connection'
