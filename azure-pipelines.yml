@@ -1,22 +1,8 @@
-# Starter pipeline
-- task: PowerPlatformWhoAmi@2
-  inputs:
-    authenticationType: 'PowerPlatformEnvironment'
-# Start with a minimal pipeline that you can customize to build and deploy your code.
-# Add steps that build, run tests, deploy, and more:
-# https://aka.ms/yaml
+# Verifies an environment service connection
+- task: microsoft-IsvExpTools.PowerPlatform-BuildTools.whoami.PowerPlatformWhoAmi@0
+  displayName: 'Power Platform WhoAmI'
 
-trigger:
-- main
-
-pool:
-  vmImage: ubuntu-latest
-
-steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
-
-- script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
+  inputs: 
+#   Service Principal/client secret (supports MFA)
+    authenticationType: PowerPlatformSPN
+    PowerPlatformSPN: 'My service connection'
