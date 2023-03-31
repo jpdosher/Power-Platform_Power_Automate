@@ -1,4 +1,4 @@
-- task: PowerPlatformWhoAmi2
+ task: PowerPlatformWhoAmi2
   inputs:
     authenticationType: 'PowerPlatformSPN'
     PowerPlatformSPN: 'PowerAutomateIntegração'
