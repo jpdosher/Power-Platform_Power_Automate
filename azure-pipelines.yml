@@ -1,5 +1,5 @@
-- task: PowerPlatformWhoAmi@2
-- task: PowerPlatformBackupEnvironment@2
+- task: PowerPlatformWhoAmi@22
+- task: PowerPlatformBackupEnvironment@22
   inputs:
     authenticationType: 'PowerPlatformSPN'
     BackupLabel: 'Full Backup - $(Build.BuildNumber)'
