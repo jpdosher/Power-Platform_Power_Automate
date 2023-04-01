@@ -1,6 +1,6 @@
- task: PowerPlatformWhoAmi2
-  inputs:
-    authenticationType: 'PowerPlatformSPN'
-    PowerPlatformSPN: 'PowerAutomateIntegração'
-    Environment: 'https://make.powerautomate.com/environments/Default-5be31d7e-cdfa-4200-8a1d-7e8a00e11d2e/flows'
-    
+name: PowerPlatformWhoAmi2
+trigger: none
+variables:
+  authenticationType: 'PowerPlatformSPN'
+  PowerPlatformSPN: 'PowerAutomateIntegração'
+  Environment: 'https://make.powerautomate.com/environments/Default-5be31d7e-cdfa-4200-8a1d-7e8a00e11d2e/flows'
