@@ -6,4 +6,4 @@
   inputs:
     authenticationType: 'PowerPlatformSPN'
     PowerPlatformSPN: 'PowerAutomateIntegração'
-    Environment: 'https://orgcdc32888.crm2.dynamics.com'
+    Environment: 'https://make.powerautomate.com/environments/Default-5be31d7e-cdfa-4200-8a1d-7e8a00e11d2e'
